@@ -53,14 +53,12 @@ padding-bottom: 25px;
  #nav-list a {
   color: black;
   text-align: center;
+  font-size: 1.2em;
  }
 
 #nav-list a:hover {
   background: #8e8787;
   border-radius: 20px;
-}
-#nav-list a span{
-  font-size: 1.5em;
 }
 
 
@@ -91,7 +89,7 @@ font-size: 1.5em;
 
    .navbar-brand {
     padding-top: 10px;
-    height: 80px;
+    height: 20px;
   }
   .navbar-brand h1 { /* Restaurant name */
     padding-top: 10px;
@@ -101,6 +99,10 @@ font-size: 1.5em;
   #collapsable-nav a { /* Collapsed nav menu text */
     font-size: 1.2em;
   }
+
+  #collapsable-nav{
+  background: #ccc; 
+}
  
 }
 
