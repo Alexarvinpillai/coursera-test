@@ -6,10 +6,15 @@ body{
 }
 
 .container{
-  margin: 30px;
-padding: auto;
-
+margin: 30px;
+padding-left: auto;
+margin: auto;
 } 
+
+.navbar-header{
+padding-bottom: 40px;
+}
+
 /** HEADER **/
 #header-nav{
   background-color:#e05038;
@@ -22,17 +27,22 @@ padding: auto;
 
 .navbar-brand{
   padding-top: 25px;
+  padding-bottom: 25px;
 }
 
+.navbar-brand:hover {
+text-decoration: none;
+}
 .navbar-brand h1{ 
 font-family: 'Oxygen', sans-serif;
-colour: #1e392a ;
+color: #729f98 ;
 font-size: 2em;
 font-weight: bold ;
 text-shadow: 1px 1px 1px #222;
 margin-top: 0;
 margin-bottom: 0;
 line-height: 0.75;
+padding-bottom: 25px;
 }
 
 
@@ -70,10 +80,58 @@ line-height: 0.75;
    border: 2px solid #ccc;
  background-color: #334431;
 font-family: 'Indie Flower', cursive;
-font-size: 2em;
+font-size: 1.5em;
 }
 
 #main-content div a h2:hover{
   text-decoration: none;
 }
 
+@media (max-width: 767px){
+
+   .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+ 
+}
+
+/*Footer*/
+/* FOOTER */
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+  opacity: 0.6;
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+#hours, #address {
+  line-height: 2;
+}
+#hours > span, #address > span {
+  font-size: 1.3em;
+}
+#address p {
+  color: #557c3e;
+  font-size: .8em;
+  line-height: 1.8;
+}
+#testimonials {
+  font-style: italic;
+}
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
+/*End Footer*/
