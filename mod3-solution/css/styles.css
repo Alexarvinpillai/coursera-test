@@ -12,7 +12,7 @@ margin: auto;
 } 
 
 .navbar-header{
-padding-bottom: 40px;
+padding-bottom: 20px;
 }
 
 /** HEADER **/
@@ -26,8 +26,8 @@ padding-bottom: 40px;
 
 
 .navbar-brand{
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: auto;
+  padding-bottom: auto;
 }
 
 .navbar-brand:hover {
@@ -93,7 +93,7 @@ font-size: 1.5em;
   }
   .navbar-brand h1 { /* Restaurant name */
     padding-top: 10px;
-    font-size: 5vw; /* 1vw = 1% of viewport width */
+    font-size: 8vw; /* 1vw = 1% of viewport width */
   }
   
   #collapsable-nav a { /* Collapsed nav menu text */
