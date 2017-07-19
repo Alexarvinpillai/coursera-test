@@ -1,10 +1,15 @@
 body{
-  font-size: 16px;
+  font-size: 10px;
   color: #fedcd2;
   background-color:  #bfd8d2; 
   font-family: 'Oxygen', sans-serif; 
 }
 
+.continer{
+  margin: 30px;
+padding: auto;
+
+} 
 /** HEADER **/
 #header-nav{
   background-color:#a5a5af;
@@ -144,20 +149,20 @@ text-align: center;
  }
 
 #nav-list a:hover {
-  background: #e7e7e7;
+  background: #8e8787;
+  border-radius: 20px;
 }
-
 #nav-list a span{
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 #email a{
   text-align: right;
   padding-bottom: 0;
 }
  #email div {
-  text-align: right;
-  margin-top: 10px;
-  font-size: 1.5em;
+  text-align: ;
+  margin-top: 2px;
+  font-size: 1em;
   color: blue;
  }
 
@@ -171,10 +176,46 @@ border: 1px solid #61122f;
 }
 
  /* END HEADER */
+ /* FOOTER */
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+  opacity: 0.6;
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+#hours, #address {
+  line-height: 2;
+}
+#hours > span, #address > span {
+  font-size: 1.3em;
+}
+#address p {
+  color: #557c3e;
+  font-size: .8em;
+  line-height: 1.8;
+}
+#testimonials {
+  font-style: italic;
+}
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
+/* END FOOTER */
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-
+    .jumbotron{
+    background: url('../images/lighthousesm.jpg') no-repeat;
+    height: 675px;
+    background-size: cover;
+    box-shadow: 0 0 50px #3f0c1f;
+    border: 2px solid #3f0c1f;
+  }
 }
 
 /********** Medium devices only **********/
@@ -187,10 +228,26 @@ border: 1px solid #61122f;
     margin: 5px 5px 5px 0;
   }
   /* End Header */
+  /* Main Content */
+  .jumbotron{
+    background: url('../images/lighthousesm.jpg') no-repeat;
+    height: 500px;
+    background-size: cover;
+    box-shadow: 0 0 50px #3f0c1f;
+    border: 2px solid #3f0c1f;
+  }
+
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
+  .jumbotron{
+    background: url('../images/lighthousesm.jpg') no-repeat;
+    height: 430px;
+    background-size: cover;
+    box-shadow: 0 0 50px #3f0c1f;
+    border: 2px solid #3f0c1f;
+  }
 
 }
 
@@ -233,6 +290,213 @@ border: 1px solid #61122f;
     letter-spacing: .1em;
     text-transform: uppercase;
   }
-  /* End Header */
+  .container.jumbotron{
+    background-size: cover;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+    box-shadow: 0 0 50px #3f0c1f;
+    border: 2px solid #3f0c1f;
+}
+  #menu-tile, #special-tile {
+    width: 150px;
+    margin: 0 auto 30px auto;
+  }
+
+  /* Footer */
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .panel-footer section:nth-child(3) {
+    margin-bottom: 0; /* margin already exists on the whole row */
+  }
+  .panel-footer section hr {
+    width: 50%;
+  }
+  /* End Footer */
+
+.menu-photo{
+  margin-right: auto;
+}
+
+.menu-price{
+  text-align: center;
+}
+
+.menu-item-description{
+  text-align: center
+}
 
 }
+
+
+/********** Extra extra small devices only **********/
+@media (max-width: 450px){
+.navbar-brand h1{
+  padding-top: 5px;
+  font-size: 10vw;
+}
+
+#menu-tile, #special-tile {
+    width: 280px;
+    margin: 0 auto 15px auto;
+  }
+
+.col-xxs-12{
+    position: relative;
+    min-height: 1px;  
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;  
+    width: 100%;
+  }
+
+.menu-photo{
+  margin-right: auto;
+}
+
+.menu-price{
+  text-align: center;
+}
+
+.menu-item-description{
+  text-align: center
+}
+
+
+}
+
+
+  /* End Header */
+
+/* Home Page*/
+
+#menu-tile, #special-tile, #map-tile{
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3f0c1f;
+  overflow: hidden;
+  text-align: center;
+  font-size: 2em
+  ;
+}
+
+#menu-tile:hover, #special-tile:hover, #map-tile:hover{
+  box-shadow: 0 1px 5px 1px  #000;
+}
+
+#menu-tile{
+  background-image: url(../images/me.jpg);
+  background-size: cover;
+}
+
+#special-tile{
+  background-image: url(../images/me2.jpg);
+  background-size: cover;
+}
+
+
+
+#menu-tile span, #special-tile span, #map-tile span {
+position: absolute;
+bottom: 0;
+right: 0;
+right: 0;
+width: 100%;
+text-align: center;
+font-size: 1.6em;
+text-transform: uppercase;
+background-color: #000;
+color: #fff;
+opacity: .8;
+}
+
+/* menu-categories*/
+.category-tiles{
+  position: relative;
+  border: 2px solid #3f0c1f;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+}
+
+.category-tiles span{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #cccccc;
+  color: #fff;
+  opacity: 2;
+}
+
+.category-tiles:hover{
+  box-shadow: 0 1px 5px 1px #000;
+}
+
+#menu-categories-title + div{
+  margin-bottom: 50px;
+  color: #000;
+}
+
+/* menu-categories end*/
+
+
+/*Single-Category*/
+
+
+.menu-item-tile{
+  margin-bottom: 25px;
+}
+
+.menu-item-tile hr{
+  width: 80%;
+}
+
+.menu-item-tile .menu-price{
+  font-size: 1.1em;
+  text-align: right;
+  margin-top: -15px;
+  margin-top: -15px;
+}
+
+.menu-price span {
+  font-size: 0.6em;
+}
+
+.menu-photo{
+  position: relative;
+  border: 2px solid #3f0c1f;
+  overflow: hidden;
+  padding: 0;
+  margin-right: -15px;
+  margin-left: auto;
+  margin-bottom: 20px;
+  max-width: 250px;
+}
+
+.menu-photo div{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  background-color: #557c3e;
+  text-align:center;
+}
+
+.menu-item-title{
+  margin: 0 0 10px;
+}
+
+.menu-item-description{
+  font-size: 0.9em;
+  font-style: italic;
+}
+/*End Single Category*/
