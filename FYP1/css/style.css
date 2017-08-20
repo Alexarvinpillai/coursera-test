@@ -95,7 +95,21 @@ margin-top: 100px;
 padding-top: 100px;
 
 }
+
+@media (max-width: 767px) {
+	.middle{
+		margin-bottom: auto;
+		margin-top: 100px;
+		padding-top: 100px;
+
+
+	}
+
+}
+
+
 /*End Middle Cotent */
+
 
 /*Colour Wedding*/
 .weddingcolor img{
@@ -287,8 +301,4 @@ opacity: .8;
   border-top: 1px solid #ddd;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
-}
-
-.title{
-	color:grey;
 }
