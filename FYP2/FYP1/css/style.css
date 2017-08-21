@@ -1,0 +1,306 @@
+/* YOUR CUSTOM STYLES */
+
+html,
+body,
+header,
+.view,
+.carousel,
+.carousel-item,
+.active,
+.carousel-inner {
+    height: 100%;
+}
+
+
+
+
+.navbar-brand{
+	font-family: 'Pacifico', cursive;
+	font-family: 'Poiret One', cursive;
+	font-size: 200%;
+	font-weight: bold;
+}
+
+
+
+.carousel-item:nth-child(1) {
+	background-image: url("https://i2.wp.com/twvactual.wpengine.com/wp-content/uploads/2015/05/10917965_10152799543528557_2759338821204774177_o.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-item:nth-child(2) {
+    background-image: url("https://pixelstory.ca/koken/i.php?/000/936/Vancouver-Wedding-Photography-110813-0594,xlarge.1481053066.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-item:nth-child(3) {
+    background-image: url("https://anotheraccidentalbride.files.wordpress.com/2014/03/three.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (min-width: 776px) {
+    .carousel .view ul li {
+        display: inline;
+    }
+    .carousel .view .full-bg-img ul li .flex-item {
+        margin-bottom: 1.5rem;
+    }
+}
+
+
+.wrapper{
+	padding-top: 7px;
+}
+
+
+.btn {
+    padding: 10px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    
+}
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+ 
+.btn-primary {
+    background: #FFB6C1;
+    color: #ffffff;
+}
+ 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #33a6cc;
+}
+ 
+.btn-primary:active, .btn-primary.active {
+    background: #778899;
+    box-shadow: none;
+}
+/** Middle Content **/
+.middle{
+
+font-family: 'Pacifico', cursive;
+font-family: 'Poiret One', cursive;
+font-weight: 180%;
+padding: auto;
+text-align: center;
+margin-bottom: auto;
+margin-top: 100px;
+padding-top: 100px;
+
+
+}
+
+@media (max-width: 767px) {
+	.middle{
+		margin-bottom: auto;
+		margin-top: 200px;
+		padding-top: auto;
+		padding-bottom: 60px;
+
+
+	}
+
+}
+
+
+/*End Middle Cotent */
+
+
+/*Colour Wedding*/
+.weddingcolor img{
+	max-width: 100%;
+	height: auto;
+    margin-bottom: 80px;
+    margin-top: 0px;
+    padding: 0px;
+    }
+
+
+//**main-content**//
+
+
+
+/* menu-categories*/
+
+.category-tiles{
+  position: relative;
+  border: 1px solid #3f0c1f;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+}
+
+.category-tiles img{
+  position: center;
+  position: relative;
+ 
+}
+
+.category-tiles p{
+  position: center;
+  bottom: o;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #696969;
+  font-family: 'Average', serif;
+font-family: 'Lalezar', cursive;
+font-family: 'Linden Hill', serif;
+font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+.category-tiles p p{
+  position: center;
+  bottom: o;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1em;
+  color: #696969;
+}
+
+.category-tiles hr{
+ 
+ 	 border: none;
+    height: 1px;
+    color: #333; /* old IE */
+    background-color: #FFC0CB; 
+}
+
+
+.category-tiles img{
+   display: block;
+    margin: auto;
+    width: auto;
+}
+
+.category-tiles:hover{
+  box-shadow: 0 1px 5px 1px #000;
+}
+
+#menu-categories-title + div{
+  margin-bottom: 50px;
+  color: #FFB6C1;
+  font-family: 'Pacifico', cursive;
+	font-family: 'Poiret One', cursive;
+	font-size: 150%;
+	font-weight: bold;
+}
+
+#menu-categories-title{
+font-family: 'Pacifico', cursive;
+font-family: 'Poiret One', cursive;
+font-weight: 200%;
+padding-bottom: 0px;
+text-align: center;
+margin-bottom: 0px;
+color: #FFB6C1;
+font-weight: bold;
+}
+/* menu-categories end*/
+
+
+
+/*Ideas*/
+
+#be-inspired{
+	text-align: center;
+	padding-top: 80px;
+	font-family: 'Pacifico', cursive;
+	font-family: 'Poiret One', cursive;
+
+}
+
+#home-tiles{
+
+	margin-top: px;
+	padding-top: 30px;
+  margin-bottom: 50px;
+  padding-bottom: 100px;
+}
+
+#dress-tile, #bridesmaid-tile, #tea-tile{
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+#dress-tile:hover, #bridesmaid-tile:hover, #tea-tile:hover{
+  	opacity: 0.9;
+    filter: alpha(opacity=10);
+  /*box-shadow: 0 1px 5px 1px  #000;*/
+}
+
+#dress-tile{
+  background-image: url(../img/bridedress.jpg);
+  background-size: cover;
+}
+
+#bridesmaid-tile{
+  background-image: url(../img/bridesmaid.jpg);
+  background-size: cover;
+
+}
+
+#tea-tile{
+  background-image: url(../img/teaceremony.jpg);
+  background-size: cover;
+
+}
+
+
+#dress-tile span, #bridesmaid-tile span, #tea-tile span {
+position: absolute;
+bottom: 0;
+right: 0;
+right: 0;
+width: 100%;
+text-align: center;
+font-size: 1em;
+text-transform: uppercase;
+background-color: #FFC0CB;
+color: #fff;
+opacity: .8;
+}
+
+
+/*End Ideas*/
+
+
+/*End Ideas*/
+
+
+
+
+  /* Footer */
+.panel-footer div{
+  margin-top: px;
+  margin-bottom: 0px;
+  margin-left: 25px;
+}
+
+  .panel-footer section {
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  .panel-footer section:nth-child(3) {
+    margin-bottom: 0; /* margin already exists on the whole row */
+  }
+  .panel-footer section hr {
+    width: 50%;
+  }
+  /* End Footer */
