@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Check List</title>
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="jquery-ui.css">
+	<script src="jquery-3.2.1.js"></script>
+	<script src="jquery-ui.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<script>
+		$(document).ready(function(){
+		$("input[type=checkbox]").removeAttr("checked");
+		$("#todolist").sortable({axis:"y", containment:"#projects"});
+		$("#projects").on("click", "input[type=checkbox]", function(){
+			$(this).closest("li").animate(function(){
+				$(this).checked()
+			});
+		});
+		$("#projects").on("click", ".ui-icon-trash", function(){
+			$(this).closest("li").slideUp(function(){
+				$(this).remove();
+			});
+		});
+		$("#btnAddTask").button()
+		.click(function(){
+			$("#task-dialog").dialog({width:400, resizable:false, modal:true,dialogClass: 'no-close success-dialog', opacity:0.5, buttons:{
+				"Add":function(){
+						$("#todolist").append("<li><input type='checkbox'>&nbsp;&nbsp;" + $("#new-task").val() + "<span class='ui-icon ui-icon-trash'></span></li>");
+						$("#new-task").val("");
+						$(this).dialog("close");
+						}, 
+				"Cancel":function(){
+						$("#new-task").val("");
+						$(this).dialog("close");
+						}
+					}});
+				 });
+		
+		
+		});
+	</script>
+</head>
+<body>
+<div id="container">
+		<h2>Wedding Check List</h2>
+		<div id="projects">
+			<ol id="todolist">
+				<li id="list"><input type="checkbox">&nbsp;&nbsp;Choose a date for your wedding<span class="ui-icon ui-icon-trash"></span></li>
+				<li id="list"><input type="checkbox">&nbsp;&nbsp;Decide on your budget<span class="ui-icon ui-icon-trash"></span></li>
+
+				<li id="list"><input type="checkbox">&nbsp;&nbsp;Start to compile guest list<span class="ui-icon ui-icon-trash"></span></li>
+				<li id="list"><input type="checkbox">&nbsp;&nbsp;Look out for wedding venues<span class="ui-icon ui-icon-trash"></span></li>
+				<li id="list"><input type="checkbox">&nbsp;&nbsp;Look out for Photographers and Videographers<span class="ui-icon ui-icon-trash"></span></li>
+				<li id="list"><input type="checkbox">&nbsp;&nbsp;Decide location for pre-wedding photos<span class="ui-icon ui-icon-trash"></span></li>
+				
+			</ol>
+		</div>
+		<input type="image" id="btnAddTask" src="images/addicon.png" width="52" height="52"  style="background-color: white" ></input>
+		
+		<div id="task-dialog" title="Add a task" style="display:none;">
+			<label for="new-task"></label><input id="new-task" type="text" />
+		</div>
+		
+</div>
+
+
+</body>
+</html>
