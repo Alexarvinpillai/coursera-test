@@ -1,0 +1,152 @@
+#container-checklist{
+	width: 600px;
+	height: 450px;
+	border: none;
+	
+
+}
+h5{
+	
+	font-size: 1.3em;
+	color: #505050;
+	 font-family: 'Average', serif;
+font-family: 'Lalezar', cursive;
+font-family: 'Linden Hill', serif;
+font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+h2{
+	padding-left: 190px;
+	color: #787878;
+	font-weight: bold;
+	font-family: 'Stalemate', cursive;
+	/*font-family: 'Pacifico', cursive;*/
+	font-size: 3em;
+}
+
+
+
+
+hr.style15 {
+	border-top: 4px double #8c8b8b;
+	text-align: center;
+}
+hr.style15:after {
+	content: '\002665';
+	display: inline-block;
+	position: relative;
+	top: -25px;
+	padding: 0 5px;
+	background: #f0f0f0;
+	color: #FFB6C1;
+	font-size: 25px;
+}
+#projects{
+	margin-top: 20px;
+	margin-left: 35px;
+	width: 500px;
+	
+}
+
+#todolist li {
+	border-bottom: 0.9px solid #FFB6C1;
+	padding: 5px;
+	margin-bottom: 5px;
+	cursor: pointer;
+	font-size: 1.1em;
+	list-style:none!important;
+	font-family: 'Indie Flower', cursive;
+	font-weight: bold;
+}
+
+#todolist li:hover{
+	background-color: rgba(255,0,0,0.2);
+}
+#todolist span{
+	margin-top: 2px;
+	float: right;
+	  -webkit-transition: all 0.7s ease;
+     -moz-transition: all 0.7s ease;
+       -o-transition: all 0.7s ease;
+      -ms-transition: all 0.7s ease;
+          transition: all 0.7s ease;
+          transform:scale(1.5, 1.5);
+}
+
+#todolist span:hover{
+	-webkit-transform: rotate(-30deg);
+     -moz-transform: rotate(-30deg);
+       -o-transform: rotate(-30deg);
+      -ms-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
+
+#btnAddTask{
+	margin-left: 530px;
+	border: none;
+	outline: none !important;
+	
+}
+
+
+#btnAddTask:active{
+    width: 70px;
+    height: 45px;
+}
+.ui-icon-close{
+	transform: scale(1.5);
+	cursor: pointer;
+}
+#task-dialog{
+	background-color: #ffffff;
+	border: none;
+	opacity: 0.8;
+	border-radius: 25px;
+}
+#new-task{
+	width: 355px;
+	border: none;
+	background-color: #FFB6C1;
+}
+
+.ui-dialog.success-dialog {
+	font-family: Verdana,Arial,sans-serif;
+	font-size: 0.9em;
+	box-shadow: 1px 1px 1px 1px #888888;
+	border-radius: 12px;
+	margin: 3px;
+}
+
+
+.ui-dialog > .ui-widget-header {
+	background: none;
+	outline: none !important;
+	border: none;
+	color: #888888;
+	font-family: 'Pacifico', cursive;
+	font-size: 1.2em;
+
+}
+
+.ui-dialog-buttonset {
+ border:none;
+  background:none;
+  font-weight: normal;
+  color: pink;
+}
+
+.ui-dialog-titlebar-close >.ui-icon-closethick{
+	background: none;
+	outline: 0px !important;
+}
+
+input[type="checkbox"] {
+  transform:scale(1.5, 1.5);
+  background-color: #FFB6C1;
+}
+
+.ui-button .ui-corner-all .ui-widget{
+	background: none;
+	outline: 0px !important;
+}
