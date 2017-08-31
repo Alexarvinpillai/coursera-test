@@ -2,18 +2,21 @@
 <html>
 <head>
 	<title>Draggable</title>
+	<link href="style.css" rel="stylesheet">
 	<link rel="stylesheet" href="jquery-ui.css">
 	<script src="jquery-3.2.1.js"></script>
 	<script src="jquery-ui.js"></script>
 	<script>
 		$(document).ready(function(){
-			$("p").draggable();
+			$("p:first, #box").draggable();
 		});
 	</script>
 	
 </head>
 <body>
 <p>This is my message:)</p>
+<div id="box"></div>
+<p>This is another my message:)</p>
 
 </body>
 </html>

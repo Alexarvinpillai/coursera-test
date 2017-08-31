@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Draggable</title>
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="jquery-ui.css">
+	<script src="jquery-3.2.1.js"></script>
+	<script src="jquery-ui.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#sub1,#sub2").draggable();
+			$("#sub3").draggable({revert:true, revertDuration:1000});
+			$("#btnDisable").click(function(){
+				$("#sub1").draggable("disable");
+			})
+			$("#btnEnable").click(function(){
+				$("#sub1").draggable("enable");
+			})
+			$("#btnDestroy").click(function(){
+				$("#sub1").draggable("destroy");
+			})
+			$("#btnGet").click(function(){
+				alert($("#sub3").draggable("option","revert"));
+			})
+			$("#btnSet").click(function(){
+				$("#sub1").draggable("option", "cursor", "move");
+			})
+			$("#btnOptions").click(function(){
+				var obj = $("#sub3").draggable("option");
+				$.each(obj,function(key,value){
+				 alert(key + "=" + value);
+				})
+			})
+
+		});
+	</script>
+	
+</head>
+<body>
+
+<div id="main">
+	<div class="sub" id="sub1" style="background-color: yellow" ></div>
+	<div class="sub" id="sub2" style="background-color: grey"></div>
+	<div class="sub" id="sub3" style="background-color: pink"></div>
+</div>
+
+<div><br />
+<button id="btnDisable">Disable</button>
+<button id="btnEnable">Enable</button>
+<button id="btnDestroy">Destroy</button>
+<button id="btnGet">Get Option</button>
+<button id="btnSet">Set Option</button>
+<button id="btnOptions">Get All Options</button>
+</div>
+
+</body>
+</html>

@@ -11,20 +11,70 @@ header,
     height: 100%;
 }
 
+body {
+   
+    background-color: #E0E0E0;
+}
 
+nav div img{
+  width: 140px;
+  height: 120px;
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 5px;
 
-.navbar-brand{
+}
+
+nav{
+  height: 100px;
+}
+
+.navbar{
+  background-color:rgb(176,176,176);
+  margin-right: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  padding-left: 0px;
+
+}
+
+.navbar-brand {
+  padding-top: 12px;
+  margin-top: 15px;
+  padding-right: 10px;
+  margin-right: 50px;
 	font-family: 'Pacifico', cursive;
   font-family: 'Poiret One', cursive;
-  font-size: 200%;
+  font-size: 170%;
   font-weight: bold;
+
 }
 
 
 .nav-item a{
   font-size: 1em;
-  color: pink;
+font-family: 'Zilla Slab', serif;
+padding: 5px 0px 10px 10px;
 }
+
+.navbar-nav .nav-item .nav-link:hover{
+color: white;
+}
+
+.navbar-nav{
+  margin-left: 20px;
+  margin-top: 80px;
+
+} 
+
+.navbar-nav li a{
+  color: white;
+}
+
+.login{
+  margin-right: 15px;
+}
+
 
 
 .carousel-item:nth-child(1) {
@@ -60,6 +110,7 @@ header,
 }
 
 
+
 .btn {
     padding: 10px 24px;
     border: 0 none;
@@ -68,7 +119,8 @@ header,
     text-transform: uppercase;
     
 }
- 
+
+
 .btn:focus, .btn:active:focus, .btn.active:focus {
     outline: 0 none;
 }
@@ -79,11 +131,11 @@ header,
 }
  
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
-    background: #33a6cc;
+    background: #909090;
 }
  
 .btn-primary:active, .btn-primary.active {
-    background: #778899;
+    background: #909090;
     box-shadow: none;
 }
 /** Middle Content **/
@@ -91,14 +143,23 @@ header,
 
 font-family: 'Pacifico', cursive;
 font-family: 'Poiret One', cursive;
-font-weight: 180%;
+font-weight:bold;
 padding: auto;
 text-align: center;
 margin-bottom: auto;
 margin-top: 100px;
 padding-top: 100px;
+font-size: 1.4em;
 
+}
 
+.middle h1{
+  font-weight: bold;
+}
+
+.Secondary-info{
+font-size: 1.3em;
+font-weight: bold;
 }
 
 @media (max-width: 767px) {
@@ -107,11 +168,11 @@ padding-top: 100px;
 		margin-top: 200px;
 		padding-top: auto;
 		padding-bottom: 60px;
-
-
 	}
 
 }
+
+
 
 
 /*End Middle Cotent */
@@ -150,7 +211,7 @@ padding-top: 100px;
 
 .category-tiles p{
   position: center;
-  bottom: o;
+  bottom: 0;
   right: 0;
   width: 100%;
   text-align: center;
@@ -165,7 +226,7 @@ font-family: 'Saira Semi Condensed', sans-serif;
 
 .category-tiles p p{
   position: center;
-  bottom: o;
+  bottom: 0;
   right: 0;
   width: 100%;
   text-align: center;
@@ -176,7 +237,7 @@ font-family: 'Saira Semi Condensed', sans-serif;
 .category-tiles hr{
  
  	 border: none;
-    height: 1px;
+    height: 2px;
     color: #333; /* old IE */
     background-color: #FFC0CB; 
 }
@@ -194,7 +255,7 @@ font-family: 'Saira Semi Condensed', sans-serif;
 
 #menu-categories-title + div{
   margin-bottom: 50px;
-  color: #FFB6C1;
+  color:  #F08080;
   font-family: 'Pacifico', cursive;
 	font-family: 'Poiret One', cursive;
 	font-size: 150%;
@@ -204,15 +265,14 @@ font-family: 'Saira Semi Condensed', sans-serif;
 #menu-categories-title{
 font-family: 'Pacifico', cursive;
 font-family: 'Poiret One', cursive;
-font-weight: 200%;
+font-weight: bold;
 padding-bottom: 0px;
 text-align: center;
 margin-bottom: 0px;
-color: #FFB6C1;
-font-weight: bold;
+color: #F08080;
+font-size: 2.5em;
 }
 /* menu-categories end*/
-
 
 
 /*Ideas*/
@@ -222,6 +282,8 @@ font-weight: bold;
 	padding-top: 80px;
 	font-family: 'Pacifico', cursive;
 	font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  color: #061D25;
 
 }
 
@@ -291,6 +353,13 @@ opacity: .8;
 
 
   /* Footer */
+
+.container .socialmedia{
+  width: 500px;
+  margin-left: 450px;
+  margin-bottom: 20px;
+
+}
 .panel-footer div{
   margin-top: px;
   margin-bottom: 0px;
@@ -307,4 +376,37 @@ opacity: .8;
   .panel-footer section hr {
     width: 50%;
   }
-  /* End Footer */
+
+#hours a{
+  font-size: 0.9em;
+  border:none;
+}
+
+footer {
+  background: #061D25;
+  padding: 10px 0;
+  margin-top: 50px;
+  font-size: 0.9em;
+  height: 200px ;
+}
+footer a {
+  color: #70726F;
+  font-size: 40px;
+  padding: 10px;
+  border-right: 1px solid #70726F;
+  transition: all .5s ease;
+}
+footer a:first-child {
+  border-left: 1px solid #70726F;
+}
+footer a:hover {
+  color: white;
+}
+
+.Copyright{
+  padding-left: 130px;
+margin-left: 150px;
+font-family: 'Pacifico', cursive;
+font-family: 'Poiret One', cursive;
+  }
+/* End Footer */

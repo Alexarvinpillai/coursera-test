@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Draggable</title>
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="jquery-ui.css">
+	<script src="jquery-3.2.1.js"></script>
+	<script src="jquery-ui.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#sub1").draggable({cursor:"help", cursorAt:{top:5, left:5}});
+			$("#sub2").draggable({cursor:"move", cursorAt:{right:5, bottom:5}});
+			$("#sub3").draggable({cursor:"crosshair", handle:"p"});
+
+			
+		});
+	</script>
+	
+</head>
+<body>
+<div id="main">
+	<div class="sub" id="sub1" style="background-color: yellow" ></div>
+	<div class="sub" id="sub2" style="background-color: grey"></div>
+	<div class="sub" id="sub3" style="background-color: pink"><p>click here to use me</p></div>
+	<p>This is a para</p>
+	<p> This is another para</p>
+</div>
+
+</body>
+</html>
