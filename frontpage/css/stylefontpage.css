@@ -25,6 +25,7 @@ nav div img{
 
 nav{
   height: 100px;
+  position: relative;
 }
 
 .navbar{
@@ -366,76 +367,6 @@ opacity: .8;
 /*End Ideas*/
 
 
-
-
-
-  /* Footer */
-
-.container .socialmedia{
-  width: 500px;
-  margin-bottom: 20px;
-  text-align: center;
-
-}
-.panel-footer div{
-  margin-top:15px;
-  margin-bottom: 0px;
-
-}
-
-  .panel-footer section {
-    margin-bottom: 0px;
-    text-align: center;
-  }
-  .panel-footer section:nth-child(3) {
-    margin-bottom: 0; /* margin already exists on the whole row */
-  }
-  .panel-footer section hr {
-    width: 50%;
-  }
-
-#hours a{
-  font-size: 0.9em;
-  border:none;
-}
-
-footer {
-  background:   rgb(60,169,113);
-  padding: 10px 0;
-  padding-top: 5px;
-  padding-bottom: 0px;
-  font-size: 0.9em;
-  height: 200px ;
-  opacity: 0.8;
-  height: 80px;
-  margin-left:0px;
-  margin-right:0px;
-}
-footer a {
-  color: #70726F;
-  font-size: 40px;
-  border-right: 1px solid #70726F;
-  transition: all .5s ease;
-   padding-left: 10px;
-  padding-right: 10px;
-}
-
-footer a:first-child {
-  border-left: 1px solid #70726F;
- 
-}
-footer a:hover {
-  color: white;
-}
-
-.Copyright{
-  margin-top: 0px; 
-font-family: 'Pacifico', cursive;
-font-family: 'Poiret One', cursive;
-color: #0fb493;
-font-weight: bold;
-  }
-/* End Footer */
 
 
   /* Footer */

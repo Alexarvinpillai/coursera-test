@@ -16,7 +16,7 @@
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/stylefontpage.css" rel="stylesheet">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Pacifico|Poiret+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Average|Lalezar|Linden+Hill|Saira+Semi+Condensed" rel="stylesheet">
@@ -30,13 +30,11 @@
     <!--Main Navigation-->
     <header>
 
-        <!--Navbar-->
 
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-faded ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-faded " style="z-index:10">
             <div class="container">
             <a class="navbar-brand" href="#">
-            <img src="img/tietheknotlogo150x120(3).png"  alt="">
+            <img src="img/10.png"  alt="">
             </a> 
                   <a class="navbar-brand title" href="#">A Step By Step Wedding Planner</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -61,7 +59,7 @@
                             <a href="LoginRegistrationSystem/login.php" class="navbar-link login">Log In</a>
                         </li>
                          <li class="nav-item Sign-up">
-                            <a class="btn  action-button btn-sm " role="button" href="LoginRegistrationSystem/index.php">Sign Up</a>
+                            <a class="btn btn-primary action-button btn-sm " role="button" href="LoginRegistrationSystem/index.php">Sign Up</a>
                         </li>
                         
                        <!-- <li class="nav-item dropdown">
@@ -83,13 +81,15 @@
         <!--/.Navbar-->
 
 
-
-
-
-
         <!--Carousel Wrapper-->
-        
-        <div id="carousel-example-3" class="carousel slide carousel-fade white-text" data-ride="carousel" data-interval="false">
+        <div id="carousel-example-3" class="carousel slide carousel-fade white-text" data-ride="carousel" data-interval="false" style="z-index:-5">
+          <!--Navbar-->
+
+
+
+
+
+
             <!--Indicators-->
             <ol class="carousel-indicators">
                 <li data-target="#carousel-example-3" data-slide-to="0" class="active"></li>
@@ -97,10 +97,8 @@
                 <li data-target="#carousel-example-3" data-slide-to="2"></li>
             </ol>
             <!--/.Indicators-->
-
             <!--Slides-->
             <div class="carousel-inner" role="listbox">
-
                 <!-- First slide -->
                 <div class="carousel-item active view hm-black-light">
 
@@ -121,52 +119,16 @@
                                 </li> -->
                         </ul>
                     </div>
-                    <!-- /.Caption -->
-
                 </div>
                 <!-- /.First slide -->
 
                 <!-- Second slide -->
                 <div class="carousel-item view hm-black-light">
-
-                    <!-- Caption -->
-                    <!-- <div class="full-bg-img flex-center white-text">
-                        <ul class="animated fadeInUp col-md-12">
-                            <li>
-                                <h1 class="h1-responsive">Lots of tutorials at your disposal</h1>
-                            </li>
-                            <li>
-                                <p>And all of them are FREE!</p>
-                            </li>
-                            <li>
-                                <a target="_blank" href="http://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-primary btn-lg" rel="nofollow">Start learning</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- /.Caption -->
-
                 </div>
                 <!-- /.Second slide -->
 
                 <!-- Third slide -->
                 <div class="carousel-item view hm-black-light">
-
-                     <!-- Caption -->
-                    <!-- <div class="full-bg-img flex-center white-text">
-                        <ul class="animated fadeInUp col-md-12">
-                            <li>
-                                <h1 class="h1-responsive">Visit our support forum</h1>
-                            </li>
-                            <li>
-                                <p>Our community can help you with any question</p>
-                            </li>
-                            <li>
-                                <a target="_blank" href="http://mdbootstrap.com/forums/forum/support/" class="btn btn-default btn-lg" rel="nofollow">Support forum</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- /.Caption --> 
-
                 </div>
                 <!-- /.Third slide -->
 
@@ -183,8 +145,8 @@
     <span class="sr-only">Next</span>
 </a>
             <!--/.Controls-->
-        </div>
-        
+</div>
+
        <!--/.Carousel Wrapper-->
 
 
@@ -219,30 +181,39 @@
 <div id="main-content" class="container-fluid ">
   <h2 id="menu-categories-title" class="text-center">What To Expect</h2><div class="text-center">Be in Full Control Of Your Big Day</div>
 <section class="row">
-<div class="col-md-4 col-sm-4 col-xs-12 col-xxs-12">
+<div class="col-md-3 col-sm-3 col-xs-12 col-xxs-12">
   <a href="check-list.html">
     <div class="category-tiles">
-     <img src="img/animat-pencil-color.gif"width="200" height="200" alt="Check List">
+     <img src="img/clipboard-green.svg" width="100" height="100" alt="Check List">
       <P>Check List<hr><p>lays out tasks to be done according to time of day</p></P>
     </div>
   </a>
 </div>
-<div class="col-md-4 col-sm-4 col-xs-12 col-xxs-12">
+<div class="col-md-3 col-sm-3 col-xs-12 col-xxs-12">
+  <a href="invites.html">
+    <div class="category-tiles">
+      <img src="img/cards.svg" width="100" height="100" alt="invites">
+      <P>Invites<hr><p>Create A guest list and receive rsvps</p></P>
+    </div>
+    </a>
+</div>
+<div class="col-md-3 col-sm-3 col-xs-12 col-xxs-12">
   <a href="budget.html">
     <div class="category-tiles">
-      <img src="img/animat-piechart-color.gif" width="200" height="200" alt="Budget">
+      <img src="img/money.svg" width="100" height="100" alt="Budget">
       <P>Budget<hr><p>lays out tasks to be done according to time of day</p></P>
     </div>
   </a>
 </div>
-<div class="col-md-4 col-sm-4 col-xs-12 col-xxs-12">
-  <a href="invites.html">
+
+    <div class="col-md-3 col-sm-3 col-xs-12 col-xxs-12">
+  <a href="check-list.html">
     <div class="category-tiles">
-      <img src="img/animat-image-color.gif" width="200" height="200" alt="invites">
-      <P>Invites<hr><p>Create A guest list and receive rsvps</p></P>
+     <img src="img/calendar.svg" width="100" height="100" alt="Check List">
+      <P>Schedule<hr><p>Ensures your planning is well spread and done timely</p></P>
     </div>
-    </a>
-    </div>
+  </a>
+</div>
 </section>
 </div> 
 
@@ -252,13 +223,13 @@
 
   <div id="home-tiles" class="row container flex-center " data-toggle="tooltip">
     <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12">
-      <a href="menu-categories.html"><div id="dress-tile"><span>Perfect Dress</span></div></a>
+      <a href="menu-categories.html"><div class="polaroid" id="dress-tile"><span>Perfect Dress</span></div></a>
     </div>
     <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12">
-      <a href="single-categories.html"><div id="bridesmaid-tile"><span>Bridesmaid</span></div></a>
+      <a href="single-categories.html"><div class="polaroid" id="bridesmaid-tile"><span>Bridesmaid</span></div></a>
     </div>
     <div class="col-md-4 col-sm-12 col-xs-6 col-xxs-12">
-      <a href="single-categories.html"><div id="tea-tile"><span>Tea Ceremony</span></div></a>
+      <a href="single-categories.html"><div id="tea-tile" class="polaroid" ><span>Tea Ceremony</span></div></a>
     </div>
   </div> 
    <!-- HOME TILES -->
@@ -274,9 +245,9 @@
 
     <!--Footer-->
 
-<footer class="panel-footer">
+<footer class="panel-footer text-center">
     <div class="container">
-    <div class="socialmedia text-center col-sm-4">
+    <div class=" container socialmedia  col-md-12 col-sm-4">
         <a href="#"><i class="fa fa-facebook"></i></a>
           <a href="#"><i class="fa fa-twitter"></i></a>
           <a href="#"><i class="fa fa-instagram"></i></a>
@@ -301,7 +272,7 @@
           <p>"Amazing Great tips! Couldn't ask for more! I'll be back again and again!"</p>
         </section>
       </div>
-      <div class="text-center Copyright">&copy; Copyright TIETHEKNOT 2017</div>
+      <div class="text-center Copyright"><hr>&copy; Copyright TIETHEKNOT 2017</div>
     </div>
   </footer>
     
