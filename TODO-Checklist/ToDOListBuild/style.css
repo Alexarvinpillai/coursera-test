@@ -1,0 +1,129 @@
+#container{
+	width: 600px;
+	height: 450px;
+	margin: 70px auto;
+	border: none;
+	align-content: center;
+}
+
+h2{
+
+	color: #787878;
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Pacifico', cursive;
+	font-size: 1.5em;
+	font-stretch: expanded;
+}
+
+#projects{
+	width: 500px;
+	
+}
+
+#todolist li {
+	border-bottom: 0.9px solid #FFB6C1;
+	padding: 5px;
+	margin-bottom: 5px;
+	cursor: pointer;
+	font-size: 1.1em;
+	list-style:none!important;
+	font-family: 'Indie Flower', cursive;
+	font-weight: bold;
+}
+
+#todolist li:hover{
+	background-color: #FFB6C1;
+}
+#todolist span{
+	float: right;
+	  -webkit-transition: all 0.7s ease;
+     -moz-transition: all 0.7s ease;
+       -o-transition: all 0.7s ease;
+      -ms-transition: all 0.7s ease;
+          transition: all 0.7s ease;
+          transform:scale(1.5, 1.5);
+}
+
+#todolist span:hover{
+	-webkit-transform: rotate(-30deg);
+     -moz-transform: rotate(-30deg);
+       -o-transform: rotate(-30deg);
+      -ms-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
+
+
+
+
+#btnAddTask{
+	margin-left: 435px;
+	margin-top: 0.2px;
+	border: none;
+	outline: none !important;
+}
+
+
+#btnAddTask:active {
+    width: 45px;
+    height: 45px;
+    -webkit-align-self: center;
+    align-self: center;
+}
+
+	.ui-icon-close
+	{
+		transform: scale(1.5);
+		cursor: pointer;
+	}
+
+	#task-dialog{
+		background-color: #ffffff;
+		border: none;
+		opacity: 0.8;
+		border-radius: 25px;
+
+	}
+
+	#new-task{
+		width: 370px;
+		border: none;
+		background-color: #FFB6C1;
+	}
+
+	.ui-dialog.success-dialog {
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 0.9em;
+    box-shadow: 1px 1px 1px 1px #888888;
+     border-radius: 12px;
+     margin: 3px;
+}
+
+
+.ui-dialog > .ui-widget-header {
+	background: none;
+	outline: none !important;
+	border: none;
+	color: #888888;
+	font-family: 'Pacifico', cursive;
+	font-size: 1.2em;
+
+}
+
+.ui-dialog-buttonset {
+ border:none;
+  background:none;
+  font-weight: normal;
+  color: pink;
+}
+
+.ui-dialog-titlebar-close >.ui-icon-closethick{
+	background: none;
+	outline: 0px !important;
+	}
+
+input[type="checkbox"] {
+  transform:scale(1.5, 1.5);
+  background-color: #FFB6C1;
+}
